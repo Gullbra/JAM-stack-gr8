@@ -2,6 +2,11 @@
   padding: 0 2rem;
 }
 
+.boomerang {
+  display: block;
+  border: 1px solid black;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
