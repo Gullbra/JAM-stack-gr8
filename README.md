@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# salt-jsfs-jam-blog
 
-## Getting Started
+## A. Scenario
 
-First, run the development server:
+In this lab you will get your hands dirty with the JAM Stack, a very modern way of building a website, and get a first site up that are using J(avaScript) A(PIs) and M(arkup).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## B. What you will be working on today
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Today you will be building a products app using some of the most common and popular tools:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+* [Next.js](https://www.gatsbyjs.org/)  to build/generate the site
+* [Contentful](https://www.contentful.com/) to store and deliver the content
+* [Netlifly](https://www.netlify.com/) to deploy the site
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## C. Lab instructions
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Create a Next.js app using the Next starter [create-next-app](https://nextjs.org/docs)
+  - `npx create-next-app jam-stack`
 
-## Learn More
+2. Inspect the codebase and try to understand how it's setup. 
 
-To learn more about Next.js, take a look at the following resources:
+3. Create your own GitHub repo and push this code to it.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Create a [Contentful account](https://www.contentful.com).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. Create a "products" page to display a list of products.
+  * This page should display a list of products from Contentful. You need create a new Content Model and add content for this to work.
+  * You should be able to click on a product to be redirected to a product page.
 
-## Deploy on Vercel
+6. Create an account on Netlify and deploy your application by linking to your GitHub repo.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+There are many good articles out there that describes everything in this setup. [Check this one out for example](https://www.netlify.com/blog/2020/08/17/integrate-next.js-and-contentful/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Please also search for some of your own, maybe you learn better from YouTube tutorials for example.
+
+---
+
+Good luck and have fun!

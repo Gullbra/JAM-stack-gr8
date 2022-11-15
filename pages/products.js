@@ -7,8 +7,7 @@ import { useRouter } from 'next/router'
 const client = createClient({
   space: 'uos2d61m43r7',
   environment: 'master',
-  // paste accesstoken
-  accessToken: accessToken
+  accessToken: 'GZfklotsMDbFn0zKONSCVc5AoXlF2OcX9tlUdzqUgLM'
 })
 
 export async function getStaticProps() {
