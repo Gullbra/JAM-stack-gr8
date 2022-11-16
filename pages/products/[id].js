@@ -1,10 +1,11 @@
 import React from 'react'
 import { createClient } from 'contentful'
+import { envObj } from '../env.mjs'
 
 const client = createClient({
-  space: 'uos2d61m43r7',
-  environment: 'master',
-  accessToken: 'GZfklotsMDbFn0zKONSCVc5AoXlF2OcX9tlUdzqUgLM'
+  space: envObj.space,
+  environment: envObj.environment,
+  accessToken: envObj.accessToken
 })
 
 export async function getStaticPaths() {
