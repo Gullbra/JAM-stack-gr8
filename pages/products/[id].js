@@ -21,11 +21,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps (context) {
-  console.log(context.params.id, 'our console')
   
-  // const product = await client.getEntry(context.params.id)
-  console.log('i am in products', context.params.id)
-  const product = await fetch(`https://cdn.contentful.com/spaces/uos2d61m43r7/environments/master/entries/${context.params.id}?access_token=${accessToken}`)
+  const product = await fetch(`https://cdn.contentful.com/spaces/uos2d61m43r7/environments/master/entries/${context.params.id}?access_token=GZfklotsMDbFn0zKONSCVc5AoXlF2OcX9tlUdzqUgLM`)
   
   return {
     props: {
@@ -38,7 +35,12 @@ const singleproduct = ({product}) => {
   console.log(product, 'consoleProd')
 
   return (
-    <div>{product.fields.name}</div>
+    <div>
+      <div>🪃</div>
+      <h2>{product.fields.name}</h2>
+      <p>{product.fields.description}</p>
+      <h3>{product.fields.price}</h3>
+    </div>
   )
 }
 

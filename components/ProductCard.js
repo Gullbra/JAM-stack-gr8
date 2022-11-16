@@ -2,11 +2,21 @@ import styles from '../styles/Home.module.css'
 
 
 const ProductCard = ({product}) => {
+
+  console.log(product);
   return (
-    <a className={styles.boomerang}>
-      {product.fields.name}
-      {product.fields.description}
-      {product.fields.price}
+    <a 
+    href={`/products/${product.sys.id}`} 
+    className={styles.boomerang}>
+      <div>
+        <div>🪃</div>
+        <p>{product.fields.name}</p>
+        <p>{product.fields.price}</p>
+        <details>
+          <summary>Description</summary>
+          {product.fields.description}
+        </details>
+      </div>
     </a>
   )
 }
