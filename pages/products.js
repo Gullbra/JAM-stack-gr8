@@ -14,7 +14,6 @@ export async function getStaticProps() {
 
   const res = await client.getEntries()
   const products = res.items
-  console.log('products', products)
 
   return {
     props: {

@@ -3,7 +3,6 @@ import styles from '../styles/Home.module.css'
 
 const ProductCard = ({product}) => {
 
-  console.log(product);
   return (
     <a 
     href={`/products/${product.sys.id}`} 

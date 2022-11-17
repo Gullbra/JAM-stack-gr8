@@ -32,7 +32,6 @@ export async function getStaticProps (context) {
 }
 
 const singleproduct = ({product}) => {
-  console.log(product, 'consoleProd')
 
   return (
     <div>
